@@ -15,9 +15,7 @@
 <br/>
 
 ## Introduction
-
-Browserbase is the best developer platform to run, manage, and monitor headless
-browsers reliably.
+Browserbase is the best developer platform to reliably run, manage, and monitor headless browsers.
 
 Get browsers' full control and leverage Browserbase's
 [Infrastructure](https://docs.browserbase.com/under-the-hood), [Stealth Mode](https://docs.browserbase.com/features/stealth-mode), and
@@ -39,8 +37,8 @@ tsc -w
 
 ### 2. Get your Browserbase API Key and Project ID:
 
-- [Create an account](https://www.browserbase.com/sign-up) or [log-in to Browserbase](https://www.browserbase.com/sign-in)
-- Copy your API Key and Project ID [from your Setting page](https://www.browserbase.com/settings)
+- [Create an account](https://www.browserbase.com/sign-up) or [log in to Browserbase](https://www.browserbase.com/sign-in)
+- Copy your API Key and Project ID [from your Settings page](https://www.browserbase.com/settings)
 
 ### 3. Run the script:
 
