@@ -8,20 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/browserbase/quickstart-playwright.git"
+    "url": "git+https://github.com/browserbase/quickstart-playwright-js.git"
   },
-  "keywords": [
-    "playwright",
-    "scraping",
-    "automation",
-    "browser"
-  ],
+  "private": "true",
   "author": "Paul Klein <paul@browserbase.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/browserbase/quickstart-playwright/issues"
+    "url": "https://github.com/browserbase/quickstart-playwright-js/issues"
   },
-  "homepage": "https://github.com/browserbase/quickstart-playwright#readme",
+  "homepage": "https://github.com/browserbase/quickstart-playwright-js#readme",
   "dependencies": {
     "playwright-core": "^1.43.1"
   },
