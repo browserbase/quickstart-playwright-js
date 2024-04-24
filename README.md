@@ -1,6 +1,6 @@
 # Playwright with Browserbase
 
-<p align="center" style="max-width: 400px; margin: 0 auto;">
+<p align="center">
     <picture>
         <source media="(prefers-color-scheme: dark)" srcset="logo/dark.png"/>
         <img alt="Defer logo" src="logo/light.png"/>
