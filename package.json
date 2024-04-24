@@ -17,7 +17,7 @@
     "browser"
   ],
   "author": "Paul Klein <paul@browserbase.com>",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/browserbase/quickstart-playwright/issues"
   },
