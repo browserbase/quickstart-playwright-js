@@ -1,5 +1,3 @@
-# Playwright with Browserbase
-
 <p align="center">
     <picture>
         <source media="(prefers-color-scheme: dark)" srcset="logo/dark.png"/>
@@ -14,7 +12,7 @@
 </p>
 <br/>
 
-## Introduction
+## Playwright with Browserbase
 Browserbase is the best developer platform to reliably run, manage, and monitor headless browsers.
 
 Get browsers' full control and leverage Browserbase's
