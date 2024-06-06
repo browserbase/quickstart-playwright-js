@@ -1,14 +1,14 @@
 <p align="center">
     <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="logo/dark.png"/>
-        <img alt="Browserbase logo" src="logo/light.png"/>
+        <source media="(prefers-color-scheme: dark)" srcset="logo/dark.svg"/>
+        <img alt="Browserbase logo" src="logo/light.svg" width="300" />
     </picture>
 </p>
 
 <p align="center">
     <a href="https://docs.browserbase.com">Documentation</a>
     <span>&nbsp;·&nbsp;</span>
-    <a href="https://www.browserbase.com/">Website</a>
+    <a href="https://www.browserbase.com/playground">Playground</a>
 </p>
 <br/>
 
