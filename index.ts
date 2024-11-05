@@ -42,3 +42,7 @@ await page.screenshot({ fullPage: true });
 console.log("Shutting down...");
 await page.close();
 await browser.close();
+
+console.log(
+  `Session complete! View replay at https://browserbase.com/sessions/${session.id}`,
+);
