@@ -26,7 +26,7 @@ const browser = await chromium.connectOverCDP(session.connectUrl);
 const defaultContext = browser.contexts()[0];
 const page = defaultContext.pages()[0];
 
-await page.goto("https://www.browserbase.com", {
+await page.goto("https://news.ycombinator.com/", {
   // let's make sure the page is fully loaded before asking for the live debug URL
   waitUntil: "domcontentloaded",
 });
