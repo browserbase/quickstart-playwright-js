@@ -1,3 +1,4 @@
+import "dotenv/config";
 import { chromium } from "playwright-core";
 import Browserbase from "@browserbasehq/sdk";
 
@@ -16,33 +17,35 @@ const bb = new Browserbase({
   apiKey: API_KEY,
 });
 
-const session = await bb.sessions.create({
-  projectId: PROJECT_ID,
-});
-console.log(`Session created, id: ${session.id}`);
+(async () => {
+  const session = await bb.sessions.create({
+    projectId: PROJECT_ID,
+  });
+  console.log(`Session created, id: ${session.id}`);
 
-console.log("Starting remote browser...");
-const browser = await chromium.connectOverCDP(session.connectUrl);
-const defaultContext = browser.contexts()[0];
-const page = defaultContext.pages()[0];
+  console.log("Starting remote browser...");
+  const browser = await chromium.connectOverCDP(session.connectUrl);
+  const defaultContext = browser.contexts()[0];
+  const page = defaultContext.pages()[0];
 
-await page.goto("https://news.ycombinator.com/", {
-  // let's make sure the page is fully loaded before asking for the live debug URL
-  waitUntil: "domcontentloaded",
-});
+  await page.goto("https://www.browserbase.com/", {
+    // let's make sure the page is fully loaded before asking for the live debug URL
+    waitUntil: "domcontentloaded",
+  });
 
-const debugUrls = await bb.sessions.debug(session.id);
-console.log(
-  `Session started, live debug accessible here: ${debugUrls.debuggerUrl}.`,
-);
+  const debugUrls = await bb.sessions.debug(session.id);
+  console.log(
+    `Session started, live debug accessible here: ${debugUrls.debuggerUrl}.`,
+  );
 
-console.log("Taking a screenshot!");
-await page.screenshot({ fullPage: true });
+  console.log("Taking a screenshot!");
+  await page.screenshot({ fullPage: true });
 
-console.log("Shutting down...");
-await page.close();
-await browser.close();
+  console.log("Shutting down...");
+  await page.close();
+  await browser.close();
 
-console.log(
-  `Session complete! View replay at https://browserbase.com/sessions/${session.id}`,
-);
+  console.log(
+    `Session complete! View replay at https://browserbase.com/sessions/${session.id}`,
+  );
+})();
