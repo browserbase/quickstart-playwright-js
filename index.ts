@@ -2,15 +2,10 @@ import "dotenv/config";
 import { chromium } from "playwright-core";
 import Browserbase from "@browserbasehq/sdk";
 
-const PROJECT_ID = process.env.BROWSERBASE_PROJECT_ID;
 const API_KEY = process.env.BROWSERBASE_API_KEY;
 
 if (!API_KEY) {
   throw new Error("BROWSERBASE_API_KEY is not set");
-}
-
-if (!PROJECT_ID) {
-  throw new Error("BROWSERBASE_PROJECT_ID is not set");
 }
 
 const bb = new Browserbase({
@@ -18,9 +13,7 @@ const bb = new Browserbase({
 });
 
 (async () => {
-  const session = await bb.sessions.create({
-    projectId: PROJECT_ID,
-  });
+  const session = await bb.sessions.create();
   console.log(`Session created, id: ${session.id}`);
 
   console.log("Starting remote browser...");

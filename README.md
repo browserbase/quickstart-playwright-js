@@ -32,14 +32,14 @@ npm install
 ### 2. Get your Browserbase API Key and Project ID:
 
 1. [Create an account](https://www.browserbase.com/sign-up) or [log in to Browserbase](https://www.browserbase.com/sign-in)
-2. Copy your API Key and Project ID [from the Dashboard](https://www.browserbase.com/overview)
+2. Copy your API Key [from the Dashboard](https://www.browserbase.com/overview)
 3. Create a `.env` file:
 
 ```bash
 cp .env.example .env
 ```
 
-4. Add your API Key and Project ID to the `.env` file.
+4. Add your API Key to the `.env` file.
 
 
 ### 3. Run the script:
